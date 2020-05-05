@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "MCQ Check",
+    "version": "0.1",
+    "content_scripts": [{
+        "matches": [
+            "https://docs.google.com/forms/*"
+        ],
+        "js": ["content.js"]
+    }],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "MCQ Checker"
+    }
+}
